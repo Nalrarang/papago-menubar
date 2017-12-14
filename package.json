@@ -1,0 +1,25 @@
+{
+  "name": "Papago",
+  "version": "1.0.0",
+  "description": "PaPago Run on your macOS menu bar",
+  "main": "main.js",
+  "scripts": {
+    "build": "electron-packager .",
+    "start": "electron .",
+    "dev": "npm start && npm run --debug"
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "papago"
+  ],
+  "author": "Nalrarang",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-packager": "^10.1.0"
+  },
+  "dependencies": {
+    "menubar": "^5.2.3"
+  }
+}
