@@ -1,22 +1,28 @@
-# electron-quick-start
+# PaPago-Menubar 
 
-**Clone and run for a quick way to see Electron in action.**
+**파파고 모바일웹을 MacOS Menu에서 바로 보려고 만든 개인 프로젝트 입니다.**
 
-This is a minimal Electron application based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation.
+영어가 안되는 저는 매번 영어로 된 문서를 읽거나, 영어로 문장을 만들려할때
+항상 브라우저를 열고 번역기를 찾아 사용하는 일이 잦습니다.
+이러한 계속되는 반복을 참지 못한 저는 네이버에서 서비스하는 PaPago를 제 Mac의 Menubar에
+올리기로 마음먹었습니다.
 
-**Use this app along with the [Electron API Demos](http://electron.atom.io/#get-started) app for API code examples to help you get started.**
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
-
-You can learn more about each of these components within the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start).
 
 ## To Use
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+해당 링크를 눌러 파일을 다운 받고 MacOS에서 실행시키시면 됩니다.
+
+
+
+## Development
+
+단순히 webview를 창 위에 띄운것이기 때문에 조금만 손을 보면,
+
+PaPago가 아닌 구글과 같은 다른 사이트들도 같은 방식으로 사용할 수 있습니다.
+
+
+... 문서 작성중 ...
+
 
 ```bash
 # Clone this repository
@@ -29,17 +35,5 @@ npm install
 npm start
 ```
 
-Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-## Resources for Learning Electron
-
-- [electron.atom.io/docs](http://electron.atom.io/docs) - all of Electron's documentation
-- [electron.atom.io/community/#boilerplates](http://electron.atom.io/community/#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
 ## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)

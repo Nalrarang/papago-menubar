@@ -12,14 +12,8 @@ mb.on('ready', function ready() {
 mb.on('after-create-window', function () {
     mb.window.setResizable(config.windowResize);
     mb.window.setMinimumSize(400, 400);
-});
+    mb.tray.setImage(AppConfig.store.defaults.icon);
 
-mb.on('after-show', function () {
-    // mb.tray.setImage(AppConfig.config.defaults.iconPressed);
-});
-
-mb.on('after-hide', function () {
-    // mb.tray.setImage(AppConfig.config.defaults.icon);
 });
 
 mb.on('focus-lost', function () {

@@ -15,8 +15,7 @@ var defaults = {
     width: 400,
     height: 800,
     externalLinks: false,
-    icon: path + '/icons/logo-icon-black-and-white/icon.iconset/icon_16x16.png',
-    iconPressed: path + '/icons/logo-icon-black-and-white-inverse/icon.iconset/icon_16x16.png',
+    icon: path + '/icons/icon.iconset/icon_16x16.png',
     preloadWindow: true,
     tooltip: 'Naver PaPago Translater'
 };
