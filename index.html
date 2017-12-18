@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <title>PAPAGO</title>
+        <style>
+            html {
+                overflow-y: auto;
+            }
+            webview {
+                position: absolute;
+                top: 0px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                outline: none !important;
+            }
+            webview.hide {
+                flex: 0 1;
+                width: 0px;
+                height: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <webview id="webview" src="about:blank"></webview>
+        <script>
+            let init = false;
+            onload = () => {
+                var webview = document.getElementById('webview');
+                webview.addEventListener('dom-ready', () => {
+                    webview.openDevTools();
+                    if(!init) {
+                        init = true;
+                        var options = { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25' };
+                        webview.loadURL('https://papago.naver.com/', options);                        
+                    }
+                })
+            }
+        </script>
+    </body>
 </html>
