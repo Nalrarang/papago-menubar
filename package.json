@@ -4,7 +4,7 @@
   "description": "PaPago Run on your macOS menu bar",
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager .",
+    "build": "electron-packager ./ --icon='./icons/logo-icon.icns' --out='./builds' --overwrite",
     "start": "electron .",
     "dev": "npm start && npm run --debug"
   },

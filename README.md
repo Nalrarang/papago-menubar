@@ -10,30 +10,34 @@
 
 ## To Use
 
-해당 링크를 눌러 파일을 다운 받고 MacOS에서 실행시키시면 됩니다.
-
-
+해당 [링크](https://github.com/Nalrarang/papago-menubar/releases/download/v1.0.0/Papago.zip)를 눌러 파일을 다운 받고 MacOS에서 실행시키시면 됩니다.
 
 ## Development
 
-단순히 webview를 창 위에 띄운것이기 때문에 조금만 손을 보면,
-
-PaPago가 아닌 구글과 같은 다른 사이트들도 같은 방식으로 사용할 수 있습니다.
-
-
-... 문서 작성중 ...
-
-
+Nodejs 및 Npm 설치 후,
 ```bash
-# Clone this repository
-git clone https://github.com/electron/electron-quick-start
-# Go into the repository
-cd electron-quick-start
-# Install dependencies
-npm install
-# Run the app
+# Install Electron
+npm install -g electron
+# Run Dev
 npm start
 ```
 
+또한, 단순히 webview를 창 위에 띄운것이기 때문에 조금만 손을 보면,
+PaPago가 아닌 구글과 같은 다른 사이트들도 아래와 같은 방식으로 사용할 수 있습니다.
 
-## License
+```javascript
+//index.html
+webview.loadURL('https://translate.google.co.kr/?hl=ko');
+```
+
+## Build
+
+```
+npm build or electron-packager .
+```
+**builds/Papago-darwin-x64** 폴더로 Build됩니다.
+
+## Reference
+다음  Repository를 참조했습니다.
+- [MenuTube](https://github.com/edanchenkov/MenuTube)
+- [menubar](https://github.com/maxogden/menubar)

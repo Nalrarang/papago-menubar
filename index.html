@@ -31,13 +31,12 @@
             onload = () => {
                 var webview = document.getElementById('webview');
                 webview.addEventListener('dom-ready', () => {
-                    webview.openDevTools();
                     if(!init) {
                         init = true;
                         var options = { userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25' };
                         webview.loadURL('https://papago.naver.com/', options);                        
                     }
-                })
+                });
             }
         </script>
     </body>
